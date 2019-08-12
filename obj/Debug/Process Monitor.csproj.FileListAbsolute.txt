@@ -1,0 +1,9 @@
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\bin\Debug\Process Monitor.exe.config
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\bin\Debug\Process Monitor.exe
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\bin\Debug\Process Monitor.pdb
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process_Monitor.ProjectInstaller.resources
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process Monitor.csproj.GenerateResource.cache
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process Monitor.csproj.CoreCompileInputs.cache
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process Monitor.exe
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process Monitor.pdb
+C:\Users\Rick\VisualStudioProjects\Process Monitor\Process Monitor\obj\Debug\Process Monitor.csprojAssemblyReference.cache
