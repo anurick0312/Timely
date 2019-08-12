@@ -1,0 +1,41 @@
+﻿<Page
+    x:Class="Process_Monitor_Manager.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Process_Monitor_Manager"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Loaded="Page_Loaded" d:DesignWidth="1806" d:DesignHeight="1010">
+
+    <Grid x:Name="mainPage">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="177*"/>
+            <RowDefinition Height="407*"/>
+            <RowDefinition Height="368*"/>
+            <RowDefinition Height="128*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="446*"/>
+            <ColumnDefinition Width="Auto" MinWidth="146"/>
+            <ColumnDefinition Width="441*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.ChildrenTransitions>
+            <TransitionCollection/>
+        </Grid.ChildrenTransitions>
+        <TextBlock HorizontalAlignment="Left" Margin="38,44,0,0" Text="Exclusion List Manager" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Height="48" Width="361"/>
+        <TextBlock HorizontalAlignment="Left" Margin="38,115,0,0" Text="Manage the exclusion list by tranferring the apps from left List to the right List or vice versa" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontFamily="Segoe UI" Height="24" Width="754"/>
+        <ListView x:Name="listAllow" Margin="38,61,10,14" Background="#FF252525" Grid.Row="1" Grid.RowSpan="2"/>
+        <ListView x:Name="listExcl" Margin="10,61,38,14" Background="#FF252525" Grid.Column="2" Grid.Row="1" Grid.RowSpan="2"/>
+        <TextBlock x:Name="txtAllowedHeading" Margin="38,18,10,0" Text="Apps currently in monitor list" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontFamily="Segoe UI" Height="24" Grid.Row="1"/>
+        <TextBlock x:Name="txtExclHeading" Margin="10,18,38,0" Text="Apps to be excluded from monitoring" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="18" FontFamily="Segoe UI" Grid.Column="2" Height="24" Grid.Row="1"/>
+        <Button x:Name="btnExclude" Content="Exclude" RenderTransformOrigin="-0.29,1.062" FontSize="18" FontWeight="Normal" FontStyle="Normal" Background="#33000000" BorderBrush="White" Margin="10,10,10,184" Grid.Column="1" HorizontalAlignment="Stretch" Grid.Row="2" VerticalAlignment="Stretch" Click="BtnExclude_Click"/>
+        <Button x:Name="btnAllow" Content="Allow" RenderTransformOrigin="-0.29,1.062" FontSize="18" FontWeight="Normal" FontStyle="Normal" Background="#33000000" BorderBrush="White" Margin="10,224,10,9" VerticalAlignment="Stretch" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Stretch" Click="BtnAllow_Click"/>
+        <Button x:Name="btnApply" Content="Apply" Grid.Column="2" Margin="0,17,38,16" Grid.Row="3" FontSize="22" HorizontalAlignment="Right" VerticalAlignment="Stretch" Width="215" Click="BtnApply_Click"/>
+        <Button x:Name="btnCancel" Content="Cancel" Grid.Column="2" Margin="0,17,277,16" Grid.Row="3" FontSize="22" VerticalAlignment="Stretch" HorizontalAlignment="Right" Width="215" Click="BtnCancel_Click"/>
+        <TextBlock Margin="29,0,0,0" Grid.Row="3" TextWrapping="Wrap" FontSize="18" Text="Current data directory:" FontFamily="Segoe UI" Height="24" VerticalAlignment="Center" HorizontalAlignment="Left" Width="184"/>
+        <TextBox x:Name="txtCurrDir" Margin="213,0,55,0" Grid.Row="3" Text="" PlaceholderText="Specify the data directory here or using the directory picker" FontSize="18" Height="36" VerticalAlignment="Center"/>
+        <Button Content="..." Margin="0,0,10,0" Grid.Row="3" FontSize="18" Click="Button_Click" Height="37" HorizontalAlignment="Right" Width="40"/>
+
+    </Grid>
+</Page>
